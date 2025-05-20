@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .cabecera {
+    background-color: #0260a9;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background: url('hero.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    background-color: #00000099;
+  }
+  
+  .hero-texto {
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .boton {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #0260a9;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .contenedor {
+    padding: 2rem;
+  }
+  
+  .bloques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-around;
+  }
+  
+  .bloque {
+    width: 300px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .bloque img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  /* CSS de Noticias */
+  .noticia {
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-left: 4px solid #0260a9;
+      display: flex;              /* Coloca texto e imagen en fila */
+  flex-direction: row;        /* Asegura que vayan en línea horizontal */
+  align-items: center;        /* Centra verticalmente */
+  gap: 20px;                  /* Espacio entre texto e imagen */
+  margin-bottom: 40px;        /* Espacio entre noticias */
+  flex-wrap: wrap;            /* Que se adapte en móviles */
+  }
+  .noticia-texto {
+  flex: 1;                      /* Ocupa el mayor espacio posible */
+  min-width: 250px;
+}
+
+.noticia-imagen img {
+  max-width: 280px;             /* Ancho máximo de la imagen */
+  width: 100%;                  /* Que se adapte */
+  border-radius: 10px;          /* Bordes redondeados */
+  height: auto;                 /* Mantiene proporción */
+}
+  
+  .pie {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+ .submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+/* Muestra el submenú cuando el padre tiene hover */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* Estilos opcionales */
+.dropdown {
+  position: relative;
+}
+
+.submenu li {
+  padding: 8px 12px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu li a:hover {
+  background-color: #eee;
+}
+
+
+
+/* Estilos para la sección hero */
+.hero {
+  background-image: url('../img/paneles.jpg');   /* Imagen de fondo */
+  background-size: cover;                        /* La imagen cubre todo el espacio */
+  background-position: center;                   /* Centra la imagen */
+  padding: 100px 20px;                           /* Espaciado interno */
+  color: white;                                  /* Color del texto */
+  text-align: center;                            /* Centra el texto */
+}
+
+/* Texto por encima del fondo oscuro */
+.hero-texto {
+  position: relative;
+  z-index: 2;                                    /* Asegura que el texto esté por encima */
+}
+
+
+
+
