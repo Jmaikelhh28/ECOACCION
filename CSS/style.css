@@ -255,25 +255,155 @@ nav a {
   margin-top: 10px;          /* Espacio superior para separarlo del contenido anterior */
 }
 
+/*-------------------------------------------------------------------------------------------------*/
 
 /* Responsive para móviles */
+/* Responsive para móviles */
 @media (max-width: 768px) {
-  .pie-contenido {
-    flex-direction: column;
+  
+  /* General Styles for Mobile */
+  body {
+    font-size: 14px; /* Ajustar el tamaño de la fuente para pantallas más pequeñas */
+  }
+
+  /* Cabecera */
+  .cabecera {
+    flex-direction: column; /* Cambiar a columna para apilar los elementos */
+    align-items: center; /* Centrar los elementos verticalmente */
+    padding: 1rem 1.5rem; /* Reducir el espacio interior para dispositivos móviles */
+  }
+
+  .logo {
+    font-size: 1.3rem; /* Reducir el tamaño del logo para pantallas pequeñas */
+  }
+
+  nav ul {
+    flex-direction: column; /* El menú se apila verticalmente */
+    align-items: center; /* Centrar los ítems del menú */
+    gap: 0.5rem; /* Reducir el espacio entre los enlaces */
+  }
+
+  nav a {
+    font-size: 1rem; /* Ajustar el tamaño de fuente del menú */
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 80px 10px; /* Reducir el padding para pantallas pequeñas */
+    background-position: top; /* Mejorar la visualización de la imagen de fondo */
+    background-size: cover;
+  }
+
+  .hero-texto {
+    padding: 1.5rem; /* Reducir padding en dispositivos móviles */
+    border-radius: 8px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem; /* Reducir tamaño de título */
+  }
+
+  /* Botón */
+  .boton {
+    padding: 0.8rem 1.2rem; /* Ajustar el tamaño del botón */
+    font-size: 1rem; /* Tamaño de fuente adecuado */
+  }
+
+  /* Bloques */
+  .bloques {
+    flex-direction: column; /* Los bloques se apilan verticalmente */
+    gap: 1.2rem; /* Espacio entre bloques */
+    align-items: center; /* Centrar los bloques */
+  }
+
+  .bloque {
+    width: 100%; /* Hacer que los bloques ocupen el 100% del ancho */
+    padding: 1rem;
+    box-shadow: none; /* Eliminar sombra en pantallas pequeñas */
+  }
+
+  .bloque img {
+    width: 100%; /* Las imágenes deben ocupar el 100% del bloque */
+    height: auto;
+  }
+
+  /* Noticias */
+  .noticia {
+    flex-direction: column; /* Apilar imagen y texto verticalmente */
+    align-items: center; /* Centrar los elementos */
+    gap: 15px; /* Espacio entre imagen y texto */
+  }
+
+  .noticia-imagen img {
+    width: 100%; /* La imagen ocupa el 100% del bloque */
+    height: auto;
+  }
+
+  /* Menú Desplegable */
+  .submenu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .submenu li {
+    padding: 10px;
     text-align: center;
+  }
+
+  /* Estadísticas */
+  .estadisticas {
+    flex-direction: column; /* Apilar los datos de las estadísticas */
+    align-items: center;
+    gap: 1.5rem; /* Espacio entre las estadísticas */
+  }
+
+  .estadisticas .dato h3 {
+    font-size: 2rem; /* Reducir el tamaño de los números */
+  }
+
+  .estadisticas .dato p {
+    font-size: 1rem; /* Reducir el tamaño del texto descriptivo */
+  }
+
+  /* Pie de página */
+  .pie {
+    padding: 1.5rem 1rem; /* Ajustar el padding en móviles */
+  }
+
+  .pie-contenido {
+    flex-direction: column; /* Apilar los elementos en columna */
+    align-items: center;
+    text-align: center; /* Alinear todo al centro */
   }
 
   .pie-logo {
-    text-align: center;
-    margin-bottom: 10px;
+    flex: none; /* La imagen del logo tendrá su propio espacio */
+    margin-bottom: 10px; /* Espacio debajo del logo */
+  }
+
+  .pie-logo img {
+    max-width: 150px; /* Reducir el tamaño del logo */
   }
 
   .pie-info {
-    text-align: center;
+    flex: none; /* Reducir el espacio que ocupa la información */
+    margin-top: 1rem; /* Espacio superior */
   }
 
+  .pie-info p {
+    margin: 5px 0; /* Reducir el margen entre los párrafos */
+  }
+
+  /* Redes sociales */
   .redes-sociales a {
     display: inline-block;
-    margin: 6px 8px;
+    margin: 8px 10px; /* Espacio entre iconos de redes sociales */
   }
-}  
+
+  .small {
+    font-size: 0.7rem; /* Tamaño de texto más pequeño para pie de página */
+  }
+}
