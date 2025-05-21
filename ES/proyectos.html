@@ -1,110 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos | EcoAccion</title>
-  <link rel="shortcut icon" href="./img/logoecoaccion.png" type="image/x-icon">
-  <link rel="stylesheet" href="../CSS/style.css">
-  <!-- Bootstrap 5 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+  <title>Proyectos | EcoAccion</title> <!-- Título en la pestaña del navegador -->
+  <link rel="shortcut icon" href="./img/logoecoaccion.png" type="image/x-icon"> <!-- Ícono de la pestaña -->
+  <link rel="stylesheet" href="../CSS/style.css"> <!-- Enlace a tu hoja de estilos personalizada -->
+  
+  <!-- Bootstrap 5 para diseño responsivo y componentes modernos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
+  <!-- CABECERA -->
   <header class="cabecera">
-    <div class="logo">EcoAccion</div>
+    <div class="logo">EcoAccion</div> <!-- Nombre o logo de la ONG -->
     <nav>
       <ul>
+        <!-- Menú de navegación -->
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="../ES/proyectos.html">Proyectos</a></li>
         <li><a href="../ES/Noticias.html">Noticias</a></li>
-         <li class="dropdown">
-        <a href="#" id="languageButton">ES ▾</a>
-        <ul class="submenu">
-          <li><a href="../EN/proyectos_EN.html">EN</a></li>
-          <li><a href="../CAT/proyectos_CAT.html">CAT</a></li>
-        </ul>
+        <li class="dropdown">
+          <a href="#" id="languageButton">ES ▾</a> <!-- Botón desplegable para cambiar idioma -->
+          <ul class="submenu">
+            <li><a href="../EN/proyectos_EN.html">EN</a></li>
+            <li><a href="../CAT/proyectos_CAT.html">CAT</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
-<!-- Sección de Proyectos con Bootstrap -->
-<section id="proyectos" class="container my-5">
-  <h2 class="text-center mb-4">Proyectos Destacados</h2>
 
-  <div class="row g-4">
-    <!-- Proyecto 1 -->
-    <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">🌞 Energía Solar para la Salud</h5>
-          <p class="card-text">Instalamos paneles solares en hospitales rurales para garantizar electricidad sostenible en zonas sin acceso a la red eléctrica. Más de 15 centros ya se han beneficiado.</p>
+  <!-- SECCIÓN DE PROYECTOS -->
+  <section id="proyectos" class="container my-5">
+    <h2 class="text-center mb-4">Proyectos Destacados</h2> <!-- Título centrado -->
+
+    <div class="row g-4"> <!-- Contenedor de tarjetas con espacio entre filas y columnas -->
+
+      <!-- PROYECTO 1 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🌞 Energía Solar para la Salud</h5>
+            <p class="card-text">
+              Instalamos paneles solares en hospitales rurales para garantizar electricidad sostenible en zonas sin acceso a la red eléctrica. Más de 15 centros ya se han beneficiado.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">👷 Formación de Jóvenes Instaladores</h5>
+            <p class="card-text">
+              Capacitamos gratuitamente a jóvenes desempleados como técnicos en instalación de paneles solares, con certificación oficial y oportunidades laborales.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🏘️ Comunidades Autosuficientes</h5>
+            <p class="card-text">
+              Implementamos sistemas solares domésticos para que familias rurales generen su propia energía y reduzcan sus gastos mensuales.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 4 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🏫 EcoEscuelas: Educación con Energía Limpia</h5>
+            <p class="card-text">
+              Llevamos energía solar a escuelas públicas y creamos contenido educativo sobre sostenibilidad para docentes y alumnos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 5 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🔬 Investigación en Energía Renovable</h5>
+            <p class="card-text">
+              Trabajamos con universidades en el desarrollo de soluciones solares más eficientes y económicas para comunidades vulnerables.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 6 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">♻️ Reciclaje de Paneles y Baterías</h5>
+            <p class="card-text">
+              Creamos un sistema de reciclaje para equipos solares antiguos, promoviendo la economía circular y reduciendo residuos.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Proyecto 2 -->
-    <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">👷 Formación de Jóvenes Instaladores</h5>
-          <p class="card-text">Capacitamos gratuitamente a jóvenes desempleados como técnicos en instalación de paneles solares, con certificación oficial y oportunidades laborales.</p>
-        </div>
+    <!-- LLAMADO A LA ACCIÓN -->
+    <div class="text-center mt-5">
+      <p>¿Te gustaría apoyar estos proyectos o colaborar como voluntario?</p>
+      <a href="../ES/contacto.html" class="btn btn-success">Colabora con Nosotros</a>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+    <div class="pie-contenido">
+      <div class="pie-logo">
+        <img src="../img/logoecoaccion.png" alt="EcoAcción"> <!-- Logo en el pie de página -->
+      </div>
+      <div class="pie-info">
+        <p><strong>Contacto</strong></p>
+        <p>Teléfono: 658 90 01 26</p>
+        <p>Email: Ecoaccion.ong@hotmail.com</p>
+        <p>Barcelona (Hospitalet de Llobregat) 08904</p>
       </div>
     </div>
 
-    <!-- Proyecto 3 -->
-    <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">🏘️ Comunidades Autosuficientes</h5>
-          <p class="card-text">Implementamos sistemas solares domésticos para que familias rurales generen su propia energía y reduzcan sus gastos mensuales.</p>
-        </div>
-      </div>
-    </div>
+    <!-- Enlaces a redes sociales -->
+    <a class="small" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    <a class="small" href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
 
-    <!-- Proyecto 4 -->
-    <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">🏫 EcoEscuelas: Educación con Energía Limpia</h5>
-          <p class="card-text">Llevamos energía solar a escuelas públicas y creamos contenido educativo sobre sostenibilidad para docentes y alumnos.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Proyecto 5 -->
-    <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">🔬 Investigación en Energía Renovable</h5>
-          <p class="card-text">Trabajamos con universidades en el desarrollo de soluciones solares más eficientes y económicas para comunidades vulnerables.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Proyecto 6 -->
-    <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">♻️ Reciclaje de Paneles y Baterías</h5>
-          <p class="card-text">Creamos un sistema de reciclaje para equipos solares antiguos, promoviendo la economía circular y reduciendo residuos.</p>
-        </div>
-      </div>
-    </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- Llamado a la acción -->
-  <div class="text-center mt-5">
-    <p>¿Te gustaría apoyar estos proyectos o colaborar como voluntario?</p>
-    <a href="../ES/contacto.html" class="btn btn-success">Colabora con Nosotros</a>
-  </div>
-</section>
-
-
-   <footer class="pie">
-    <p>&copy; 2025 EcoAccion | DMM@ecoaccion.org</p>
+    <!-- Información legal y lema -->
+    <p class="small">© 2025 ECOACCION.ONG. Todos los derechos reservados.</p>
+    <p class="small">Por un futuro más sostenible</p>
   </footer>
+
 </body>
 </html>

@@ -1,52 +1,66 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: "Segoe UI", sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  
+
+/*🌐 Estilos globales*/
+
+  * {
+  box-sizing: border-box; /* Incluye padding y borde dentro del ancho y alto total del elemento */
+  margin: 0;              /* Elimina márgenes por defecto */
+  padding: 0;             /* Elimina relleno por defecto */
+}
+
+body {
+  font-family: "Segoe UI", sans-serif; /* Fuente principal del sitio */
+  background-color: #f9f9f9;           /* Color de fondo claro */
+  color: #333;                         /* Color de texto gris oscuro */
+  line-height: 1.6;                    /* Altura de línea para mejorar legibilidad */
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+/* 🖼️ Sección Hero (imagen destacada) */
+
+.hero {
+  background-image: url('../img/fotos1.jpg');   /* Imagen de fondo */
+  background-size: cover;                        /* La imagen cubre todo el espacio */
+  background-position: center;                   /* Centra la imagen */
+  padding: 100px 20px;                           /* Espaciado interno */
+  color: white;                                  /* Color del texto */
+  text-align: center;                              /* Centra el texto */
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+  /* 🔝 Cabecera / Header */
+
   .cabecera {
-    background-color: #0260a9;
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  background-color: #0260a9; /* Azul oscuro como fondo */
+  color: white;              /* Texto en blanco */
+  padding: 1rem 2rem;        /* Espaciado interior */
+  display: flex;             /* Flexbox para alinear elementos */
+  justify-content: space-between; /* Distribuye elementos */
+  align-items: center;            /* Centra verticalmente */
+}
   
-  .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
+.logo {
+  font-weight: bold;      /* Texto en negrita */
+  font-size: 1.5rem;      /* Tamaño grande para el logo */
+}
+
+
+
+nav ul {
+  list-style: none;       /* Elimina viñetas */
+  display: flex;          /* Distribuye horizontalmente */
+  gap: 1rem;              /* Espacio entre ítems */
+}
+
+nav a {
+  color: white;           /* Enlaces en blanco */
+  text-decoration: none;  /* Sin subrayado */
+}
+
+/*-----------------------------------------------------------------------*/
   
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .hero {
-    background: url('hero.jpg') center/cover no-repeat;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    background-color: #00000099;
-  }
   
   .hero-texto {
     background-color: rgba(0,0,0,0.5);
@@ -54,54 +68,71 @@
     border-radius: 10px;
   }
   
+/*---------------------------------------------------------------------------*/
+
+/* 🔘 Botón reutilizable */
+
   .boton {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #0260a9;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-  }
+  display: inline-block;              /* Se comporta como un botón */
+  margin-top: 1rem;                   /* Espacio superior */
+  background-color: #0260a9;         /* Color azul */
+  color: white;                      /* Texto blanco */
+  padding: 0.5rem 1rem;              /* Relleno interior */
+  text-decoration: none;             /* Sin subrayado */
+  border-radius: 5px;                /* Bordes redondeados */
+}
+
+  /*------------------------------------------------------------------------------*/
   
+
+  /*🧱 Sección de bloques*/
   .contenedor {
-    padding: 2rem;
-  }
-  
-  .bloques {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: space-around;
-  }
-  
-  .bloque {
-    width: 300px;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  .bloque img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
+  padding: 2rem; /* Espaciado interno general */
+}
+
+
+.bloques {
+  display: flex;              /* Flexbox para los bloques */
+  flex-wrap: wrap;            /* Permite salto de línea en móvil */
+  gap: 1.5rem;                /* Espacio entre bloques */
+  justify-content: space-around; /* Distribuye los bloques */
+}
+
+.bloque {
+  width: 300px;                      /* Ancho fijo */
+  background-color: white;          /* Fondo blanco */
+  padding: 1rem;                     /* Relleno interior */
+  border-radius: 8px;               /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+  text-align: center;               /* Texto centrado */
+}
+
+.bloque img {
+  width: 100%;      /* Imagen ocupa todo el ancho del bloque */
+  height: auto;     /* Mantiene proporción */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+/*📰 Estilos de Noticias*/
+
   /* CSS de Noticias */
-  .noticia {
-    margin-top: 1rem;
-    background-color: white;
-    padding: 1rem;
-    border-left: 4px solid #0260a9;
-      display: flex;              /* Coloca texto e imagen en fila */
-  flex-direction: row;        /* Asegura que vayan en línea horizontal */
-  align-items: center;        /* Centra verticalmente */
-  gap: 20px;                  /* Espacio entre texto e imagen */
-  margin-bottom: 40px;        /* Espacio entre noticias */
-  flex-wrap: wrap;            /* Que se adapte en móviles */
-  }
+
+.noticia {
+  margin-top: 1rem;
+  background-color: white;      /* Fondo blanco */
+  padding: 1rem;                /* Relleno */
+  border-left: 4px solid #0260a9; /* Línea azul lateral */
+  display: flex;                /* Layout en fila */
+  flex-direction: row;          /* Asegura que vayan en línea horizontal*/
+  align-items: center;          /* Centra verticalmente */
+  gap: 20px;                    /* Espacio entre texto e imagen */
+  margin-bottom: 40px;          /* Espacio entre noticias */
+  flex-wrap: wrap;             /* Se adapta a pantallas pequeñas */
+}
+
+
   .noticia-texto {
   flex: 1;                      /* Ocupa el mayor espacio posible */
   min-width: 250px;
@@ -113,17 +144,19 @@
   border-radius: 10px;          /* Bordes redondeados */
   height: auto;                 /* Mantiene proporción */
 }
-  
-  .pie {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
- .submenu {
-  display: none;
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*📂 Menú desplegable (submenús)*/
+
+
+
+
+.submenu {
+  display: none;               /* Oculto por defecto */
   position: absolute;
   background-color: white;
   list-style: none;
@@ -132,47 +165,115 @@
   border: 1px solid #ccc;
 }
 
-/* Muestra el submenú cuando el padre tiene hover */
 .dropdown:hover .submenu {
-  display: block;
+  display: block;             /* Se muestra al pasar el mouse */
 }
 
-/* Estilos opcionales */
 .dropdown {
-  position: relative;
+  position: relative;         /* Para ubicar el submenu correctamente */
 }
 
 .submenu li {
-  padding: 8px 12px;
+  padding: 8px 12px;          /* Espaciado entre ítems */
 }
 
 .submenu li a {
-  text-decoration: none;
+  text-decoration: none;      /* Sin subrayado */
   color: black;
 }
 
 .submenu li a:hover {
-  background-color: #eee;
+  background-color: #eee;     /* Efecto hover */
 }
 
 
+/*------------------------------------------------------------------------------*/
+/* 📉 Estadísticas */
 
-/* Estilos para la sección hero */
-.hero {
-  background-image: url('../img/paneles.jpg');   /* Imagen de fondo */
-  background-size: cover;                        /* La imagen cubre todo el espacio */
-  background-position: center;                   /* Centra la imagen */
-  padding: 100px 20px;                           /* Espaciado interno */
-  color: white;                                  /* Color del texto */
-  text-align: center;                            /* Centra el texto */
+.estadisticas {
+  display: flex;              /* Layout en fila */
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-/* Texto por encima del fondo oscuro */
-.hero-texto {
-  position: relative;
-  z-index: 2;                                    /* Asegura que el texto esté por encima */
+.estadisticas .dato h3 {
+  font-size: 2.5rem;          /* Tamaño grande del número */
+  color: #0260a9;             /* Azul para destacar */
+}
+
+.estadisticas .dato p {
+  font-size: 1.1rem;          /* Texto descriptivo */
+}
+
+/*-------------------------------------------------------------------------*/
+
+/*🦶 Pie de página*/
+
+ .pie {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+
+.pie-contenido {
+  display: flex;               /* Usa flexbox para distribuir elementos en fila */
+  align-items: center;         /* Centra los elementos verticalmente dentro del contenedor */
+  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+  flex-wrap: wrap;             /* Permite que los elementos salten a la siguiente línea si no caben */
+  max-width: 1000px;           /* Ancho máximo del contenedor */
+  margin: 0 auto;              /* Centra horizontalmente el contenedor en la página */
+}
+
+.pie-logo {
+  flex: 8;                    /* Ocupa 8 partes de un total de 10 (más ancho que la info) */
+  text-align: left;          /* Alinea el contenido a la izquierda */
+}
+
+.pie-logo img {
+  max-width: 200px;          /* Ancho máximo de la imagen del logo */
+  height: auto;              /* Mantiene la proporción del logo */
+}
+
+.pie-info {
+  flex: 2;                   /* Ocupa 2 partes (más estrecho que el logo) */
+  text-align: center;        /* Centra el texto dentro de esta sección */
 }
 
 
+.pie-info p {
+  margin: 7px 0;             /* Espacio vertical entre párrafos (arriba/abajo) */
+}
+
+.small {
+  font-size: 0.75rem;        /* Texto pequeño, útil para notas legales o derechos reservados */
+  color: #cccccc;            /* Gris claro para no destacar demasiado */
+  text-align: center;        /* Centra horizontalmente el texto */
+  margin-top: 10px;          /* Espacio superior para separarlo del contenido anterior */
+}
 
 
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .pie-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pie-logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .pie-info {
+    text-align: center;
+  }
+
+  .redes-sociales a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
+}  

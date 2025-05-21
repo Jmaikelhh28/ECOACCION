@@ -1,12 +1,140 @@
 <!DOCTYPE html>
-<html lang="es">
+<!-- Declaració del tipus de document HTML5 -->
+<html lang="ca">
+<!-- Inici del document HTML en idioma català -->
+
 <head>
   <meta charset="UTF-8">
+  <!-- Defineix la codificació de caràcters com a UTF-8 -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoAccion</title>
+  <!-- Disseny responsive per a dispositius mòbils -->
+
+  <title>EcoAcció</title>
+  <!-- Títol de la pàgina que apareix a la pestanya del navegador -->
+
   <link rel="shortcut icon" href="./img/logoecoaccion.png" type="image/x-icon">
-  <link rel="stylesheet" href="./CSS/style.css">
+  <!-- Icona que apareix a la pestanya del navegador -->
+
+  <link rel="stylesheet" href="../CSS/style.css">
+  <!-- Enllaç a la fulla d'estils personalitzada -->
 </head>
+
 <body>
-    <p>hola</p>
+  <!-- Cos del document: conté tot el contingut visible -->
+
+  <header class="cabecera">
+    <!-- Capçalera del lloc web: conté logo i menú de navegació -->
+
+    <div class="logo">EcoAcció</div>
+    <!-- Logo de text de l'ONG -->
+
+    <nav>
+      <!-- Menú de navegació principal -->
+      <ul>
+        <li><a href="index_CAT.html">Inici</a></li>
+        <!-- Enllaç a la pàgina d'inici -->
+
+        <li><a href="proyectos_CAT.html">Projectes</a></li>
+        <!-- Enllaç a la secció de projectes -->
+
+        <li><a href="Noticias_CAT.html">Notícies</a></li>
+        <!-- Enllaç a notícies -->
+
+        <li class="dropdown">
+          <!-- Menú desplegable per seleccionar idioma -->
+          <a href="#" id="languageButton">CA ▾</a>
+          <ul class="submenu">
+            <li><a href="../EN/index_EN.html">EN</a></li>
+            <li><a href="../index.html">ES</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Secció principal tipus "hero" amb només text -->
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Ajudem allà on més es necessita</h1>
+      <!-- Títol principal -->
+
+      <p>Treballem per una energia sostenible.</p>
+      <!-- Subtítol o eslògan -->
+
+      <a href="#colabora" class="boton">Fes la teva donació</a>
+      <!-- Botó de crida a l'acció que porta a la secció "Col·labora" -->
+    </div>
+  </section>
+
+  <!-- Secció sobre l'acció de l'ONG -->
+  <section id="accion" class="contenedor">
+    <div class="bloques">
+      <div class="bloque">
+        <img src="educacion.jpg" alt=""/>
+        <h3>Qui som?</h3>
+        <p>A la nostra ONG treballem per promoure la ciutadania global facilitant l'accés equitatiu a energies renovables, especialment a través de la instal·lació de panells solars. Creiem que l'energia sostenible és una eina poderosa per combatre el canvi climàtic, reduir les desigualtats energètiques i empoderar comunitats vulnerables.</p>
+      </div>
+      <div class="bloque">
+        <img src="salud.jpg" alt=""/>
+        <h3>Què fem?</h3>
+        <ul>
+          <li>Dissenyem projectes d'instal·lació de panells solars en escoles, centres de salut i altres infraestructures essencials en comunitats amb pocs recursos.</li>
+          <li>Col·laborem amb tècnics i voluntaris formats per l'ONG, assegurant un enfocament participatiu i sostenible en totes les nostres accions.</li>
+        </ul>
+      </div>
+      <div class="bloque">
+        <img src="refugio.jpg" alt=""/>
+        <h3>Què aportem?</h3>
+        <p>Aportem accés a energia renovable en comunitats vulnerables, reduint desigualtats i millorant la seva qualitat de vida. Formem persones locals i treballem amb elles per construir un futur més just i sostenible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secció de resultats i impacte -->
+  <section class="logros contenedor">
+    <h2>Impacte de la nostra acció</h2>
+    <div class="estadisticas">
+      <div class="dato">
+        <h3>+12</h3>
+        <p>Comunitats electrificades</p>
+      </div>
+      <div class="dato">
+        <h3>+5.000</h3>
+        <p>Voluntaris formats</p>
+      </div>
+      <div class="dato">
+        <h3>+40%</h3>
+        <p>Reducció d'emissions en centres recolzats</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secció de col·laboració -->
+  <section id="colabora" class="contenedor">
+    <h2>Com pots col·laborar?</h2>
+    <p>Fes-te soci, participa com a voluntari o difon la nostra tasca. La teva ajuda és vital.</p>
+    <a href="contacto_CAT.html" class="boton">Vull ajudar</a>
+  </section>
+
+  <!-- Peu de pàgina amb informació de contacte -->
+  <footer class="pie">
+    <div class="pie-contenido">
+      <div class="pie-logo">
+        <img src="../img/logoecoaccion.png" alt="EcoAcció">
+      </div>
+      <div class="pie-info">
+        <p><strong>Contacte</strong></p>
+        <p>Telèfon: 658 90 01 26</p>
+        <p>Email: Ecoaccio.ong@hotmail.com</p>
+        <p>Barcelona (Hospitalet de Llobregat) 08904</p>
+      </div>
+    </div>
+    <a class="small" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    <a class="small" href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+    <p class="small">© 2025 ECOACCIO.ONG. Tots els drets reservats.</p>
+    <p class="small">Per un futur més sostenible</p>
+  </footer>
+
 </body>
+</html>

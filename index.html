@@ -1,41 +1,73 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+<!-- Inicio del documento HTML en idioma español -->
+
 <head>
   <meta charset="UTF-8">
+  <!-- Define la codificación de caracteres como UTF-8, compatible con la mayoría de los idiomas -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hace que el diseño se adapte correctamente a dispositivos móviles (responsive design) -->
+
   <title>EcoAccion</title>
+  <!-- Título de la página que aparece en la pestaña del navegador -->
+
   <link rel="shortcut icon" href="./img/logoecoaccion.png" type="image/x-icon">
+  <!-- Icono que aparece en la pestaña del navegador -->
+
   <link rel="stylesheet" href="./CSS/style.css">
+  <!-- Enlace a la hoja de estilos personalizada -->
 </head>
+
 <body>
+  <!-- Cuerpo del documento: contiene todo el contenido visible -->
+
   <header class="cabecera">
+    <!-- Cabecera del sitio web: contiene logo y menú de navegación -->
+
     <div class="logo">EcoAccion</div>
+    <!-- Logo de texto de la ONG -->
+
     <nav>
+      <!-- Menú de navegación principal -->
       <ul>
         <li><a href="index.html">Inicio</a></li>
+        <!-- Enlace a la página de inicio -->
+
         <li><a href="./ES/proyectos.html">Proyectos</a></li>
+        <!-- Enlace a la sección de proyectos -->
+
         <li><a href="./ES/Noticias.html">Noticias</a></li>
-         <li class="dropdown">
-        <a href="#" id="languageButton">ES ▾</a>
-        <ul class="submenu">
-          <li><a href="EN/index_EN.html">EN</a></li>
-          <li><a href="CAT/index_CAT.html">CAT</a></li>
-        </ul>
+        <!-- Enlace a noticias -->
+
+        <li class="dropdown">
+          <!-- Menú desplegable para seleccionar idioma -->
+          <a href="#" id="languageButton">ES ▾</a>
+          <ul class="submenu">
+            <li><a href="EN/index_EN.html">EN</a></li>
+            <li><a href="CAT/index_CAT.html">CAT</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
 
-<!-- Sección principal tipo "hero" con solo texto -->
-<section class="hero">
-  <div class="hero-texto">
-    <h1>Ayudamos donde más se necesita</h1>
-    <p>Trabajamos por la energía sostenible.</p>
-    <!-- Botón que lleva a la sección "Colabora" -->
-    <a href="#colabora" class="boton">Haz tu donación</a>
-  </div>
-</section>
+  <!-- Sección principal tipo "hero" con solo texto -->
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Ayudamos donde más se necesita</h1>
+      <!-- Título principal -->
 
+      <p>Trabajamos por la energía sostenible.</p>
+      <!-- Subtítulo o eslogan -->
 
+      <a href="#colabora" class="boton">Haz tu donación</a>
+      <!-- Botón de llamado a la acción que lleva a la sección "Colabora" -->
+    </div>
+  </section>
+
+  <!-- Sección sobre la acción de la ONG -->
   <section id="accion" class="contenedor">
     <div class="bloques">
       <div class="bloque">
@@ -46,28 +78,63 @@
       <div class="bloque">
         <img src="salud.jpg" alt=""/>
         <h3>¿Qué hacemos?</h3>
-        <ul>Desarrollamos proyectos de instalación de paneles solares en escuelas, centros de salud y otras infraestructuras esenciales en comunidades con recursos limitados.</ul>
-        <ul>Colaboramos con técnicos y voluntarios formados por la ONG, asegurando un enfoque participativo y sostenible en todas nuestras acciones.</ul>
+        <ul>
+          <li>Desarrollamos proyectos de instalación de paneles solares en escuelas, centros de salud y otras infraestructuras esenciales en comunidades con recursos limitados.</li>
+          <li>Colaboramos con técnicos y voluntarios formados por la ONG, asegurando un enfoque participativo y sostenible en todas nuestras acciones.</li>
+        </ul>
       </div>
       <div class="bloque">
         <img src="refugio.jpg" alt=""/>
-        <h3>¿Que Aportamos?</h3>
+        <h3>¿Qué aportamos?</h3>
         <p>Aportamos acceso a energía renovable en comunidades vulnerables, reduciendo desigualdades y mejorando su calidad de vida. Formamos a personas locales y trabajamos con ellas para construir un futuro más justo y sostenible.</p>
       </div>
     </div>
   </section>
 
-<section id="colabora" class="contenedor">
-  <h2>¿Como puedes colaborar?</h2>
-  <p>Hazte socio, participa como voluntario o difunde nuestra labor. Tu ayuda és vital.</p>
-  <a href="./ES/contacto.html" class="boton">Quiero ayudar</a>
-</section>
+  <!-- Sección de logros e impacto -->
+  <section class="logros contenedor">
+    <h2>Impacto de nuestra acción</h2>
+    <div class="estadisticas">
+      <div class="dato">
+        <h3>+12</h3>
+        <p>Comunidades electrificadas</p>
+      </div>
+      <div class="dato">
+        <h3>+5.000</h3>
+        <p>Voluntarios capacitados</p>
+      </div>
+      <div class="dato">
+        <h3>+40%</h3>
+        <p>Reducción de emisiones en centros apoyados</p>
+      </div>
+    </div>
+  </section>
 
-  
+  <!-- Sección de colaboración -->
+  <section id="colabora" class="contenedor">
+    <h2>¿Cómo puedes colaborar?</h2>
+    <p>Hazte socio, participa como voluntario o difunde nuestra labor. Tu ayuda es vital.</p>
+    <a href="./ES/contacto.html" class="boton">Quiero ayudar</a>
+  </section>
 
+  <!-- Pie de página con información de contacto -->
   <footer class="pie">
-    <p>&copy; 2025 EcoAccion | DMM@ecoaccion.org</p>
+    <div class="pie-contenido">
+      <div class="pie-logo">
+        <img src="./img/logoecoaccion.png" alt="EcoAcción">
+      </div>
+      <div class="pie-info">
+        <p><strong>Contacto</strong></p>
+        <p>Teléfono: 658 90 01 26</p>
+        <p>Email: Ecoaccion.ong@hotmail.com</p>
+        <p>Barcelona (Hospitalet de Llobregat) 08904</p>
+      </div>
+    </div>
+    <a class="small" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    <a class="small" href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+    <p class="small">© 2025 ECOACCION.ONG. Todos los derechos reservados.</p>
+    <p class="small">Por un futuro más sostenible</p>
   </footer>
+
 </body>
 </html>
-
