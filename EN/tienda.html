@@ -1,0 +1,193 @@
+<!DOCTYPE html> <!-- Declares the document as HTML5 -->
+<html lang="en"> <!-- Sets the language of the document to English -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Character encoding for supporting accents and symbols -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+  <title>Projects | EcoAction</title> <!-- Title displayed in browser tab -->
+ 
+  <!-- Favicon displayed in the browser tab -->
+  <link rel="shortcut icon" href="../img/logoecoaccion.png" type="image/x-icon">
+ 
+  <!-- Link to custom stylesheet -->
+  <link rel="stylesheet" href="../CSS/style.css">
+ 
+  <!-- Bootstrap 5 for styling and responsive layout -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER WITH NAVIGATION MENU -->
+  <header class="cabecera">
+    <div class="logo">EcoAction</div> <!-- Logo or organization name -->
+    <nav>
+      <ul>
+        <!-- Navigation links -->
+        <li><a href="index_EN.html">Home</a></li>
+        <li><a href="proyectos_EN.html">Projects</a></li>
+        <li><a href="Noticias_EN.html">News</a></li>
+        <li><a href="tienda.html">Shop</a></li>
+        <li class="dropdown"> <!-- Language dropdown -->
+          <a href="#" id="languageButton">EN ▾</a>
+          <ul class="submenu">
+            <li><a href="../ES/tienda.html">ES</a></li>
+            <li><a href="../CAT/tiendaCAT.html">CAT</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN SECTION WITH PRODUCTS -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Product image -->
+        <img src="../img/linterna.jpg" alt="Solar Flashlight" class="img-fluid margen5" width="50%">
+      </div>
+
+      <div class="col-md-6">
+        <!-- Product description -->
+        <h3 class="margen21">1000 Lumen Rechargeable Solar LED, High/Low Beam, Integrated Solar Panel Charges Indoors or Outdoors, USB Cable Included for Fast Charging</h3>
+        <h4 class="grande">-8% €9.99</h4>
+
+        <!-- Add to cart form -->
+        <div class="container mt-5">
+          <div class="row justify-content-end">
+            <div class="col-md-4">
+              <form class="cart bg-dark text-light p-4 rounded shadow align-items-center" action="" method="post" enctype="multipart/form-data">
+                <h4 class="mb-3 text-center">Add to Cart</h4>
+                <div class="quantity d-flex align-items-center justify-content-center mb-3">
+                  <!-- Quantity buttons -->
+                  <button type="button" class="btn btn-outline-light btn-sm me-2 minus">-</button>
+                  <input type="number" id="quantity_eldenring" class="form-control text-center w-50" value="1" min="1" name="quantity" step="1" inputmode="numeric" autocomplete="off">
+                  <button type="button" class="btn btn-outline-light btn-sm ms-2 plus">+</button>
+                </div>
+                <button type="submit" name="add-to-cart" value="eldenring" class="btn btn-warning w-100">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- VAT note -->
+        <h4 class="grande1">Prices of products sold on Amazon include VAT. Depending on your delivery address, VAT may vary at checkout. For more information, click</h4>
+      </div>
+    </div>
+
+    <!-- Second product -->
+    <div class="row mt-2">
+      <h2 class="margen17">SOLAR CHARGER</h2>
+    </div>
+
+    <div class="row mt-1">
+      <div class="col-md-6">
+        <img src="../img/panel.png" alt="Solar Charger" class="img-fluid" width="90%">
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="margen21">Solar Panel, Portable Outdoor Solar Charger for Mobile Power Bank, Cell Phone, Camera 2W 5V</h2>
+        <h4 class="grande">- €10.29</h4>
+
+        <!-- Add to cart form -->
+        <div class="container mt-5">
+          <div class="row justify-content-end">
+            <div class="col-md-4">
+              <form class="cart bg-dark text-light p-4 rounded shadow align-items-center" action="" method="post" enctype="multipart/form-data">
+                <h4 class="mb-3 text-center">Add to Cart</h4>
+                <div class="quantity d-flex align-items-center justify-content-center mb-3">
+                  <button type="button" class="btn btn-outline-light btn-sm me-2 minus">-</button>
+                  <input type="number" id="quantity_eldenring" class="form-control text-center w-50" value="1" min="1" name="quantity" step="1" inputmode="numeric" autocomplete="off">
+                  <button type="button" class="btn btn-outline-light btn-sm ms-2 plus">+</button>
+                </div>
+                <button type="submit" name="add-to-cart" value="eldenring" class="btn btn-warning w-100">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="grande1">Prices of products sold on Amazon include VAT. Depending on your delivery address, VAT may vary at checkout. For more information, click</h4>
+      </div>
+    </div>
+
+    <!-- Reviews section -->
+    <div class="row mt-2">
+      <h2 class="margen17">REVIEWS</h2>
+    </div>
+
+    <div class="container">
+      <h2 class="text-center text-light mb-4">REVIEWS</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="reseñas bg-secondary text-white p-4 rounded shadow text-center">
+
+            <!-- Review examples -->
+            <div class="mb-4 reseña">
+              <h5 class="fw-bold text-warning">⭐️⭐️⭐️⭐️⭐️ - Diego M.</h5>
+              <p class="textocentrado">Amazing flashlight! Great brightness, charges fast.</p>
+            </div>
+            <div class="mb-4 reseña">
+              <h5 class="fw-bold text-warning">⭐️⭐️⭐️⭐️ - Michael Hidalgo.</h5>
+              <p class="textocentrado">The solar panel was very useful, it helped me save my family during the blackout.</p>
+            </div>
+            <div class="mb-4 reseña">
+              <h5 class="fw-bold text-warning">⭐️⭐️⭐️ - Marcos Felix.</h5>
+              <p class="textocentrado">Very cool, a lot.</p>
+
+              <hr class="text-light">
+
+              <!-- Review form -->
+              <h4 class="mb-3 text-warning">Leave your review</h4>
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label text-light">Name:</label>
+                  <input type="text" class="form-control text-center" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                  <label for="puntuacion" class="form-label text-light">Rating:</label>
+                  <select class="form-control text-center" id="puntuacion" required>
+                    <option value="">Select</option>
+                    <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                    <option value="4">⭐️⭐️⭐️⭐️</option>
+                    <option value="3">⭐️⭐️⭐️</option>
+                    <option value="2">⭐️⭐️</option>
+                    <option value="1">⭐️</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="comentario" class="form-label text-light">Comment:</label>
+                  <textarea class="form-control text-center" id="comentario" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+  <footer class="pie">
+    <div class="pie-contenido">
+      <div class="pie-logo">
+        <img src="../img/logoecoaccion.png" alt="EcoAction"> <!-- Footer logo -->
+      </div>
+      <div class="pie-info">
+        <p><strong>Contact</strong></p>
+        <p>Phone: 658 90 01 26</p>
+        <p>Email: Ecoaccion.ong@hotmail.com</p>
+        <p>Barcelona (Hospitalet de Llobregat) 08904</p>
+      </div>
+    </div>
+
+    <!-- Social media links -->
+    <a class="small" href="https://www.instagram.com/_eco_accion/"><i class="fab fa-instagram"></i> Instagram</a>
+    <a class="small" href="https://www.facebook.com/EcoAccioon/about/"><i class="fab fa-facebook-f"></i> Facebook</a>
+
+    <!-- Legal info and slogan -->
+    <p class="small">© 2025 ECOACTION.NGO. All rights reserved.</p>
+    <p class="small">For a more sustainable future</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html> <!-- Indica que es tracta d'un document HTML5 -->
+<html lang="ca"> <!-- Estableix l'idioma del document a català -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Defineix la codificació de caràcters per suportar accents i símbols -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Per a disseny responsiu en dispositius mòbils -->
+  <title>Projectes | EcoAcció</title> <!-- Títol de la pestanya del navegador -->
+
+  <!-- Icona que apareix a la pestanya del navegador -->
+  <link rel="shortcut icon" href="../img/logoecoaccion.png" type="image/x-icon">
+
+  <!-- Bootstrap 5 per a estils i disseny responsiu -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Enllaç a la fulla d'estils personalitzada -->
+  <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<body>
+
+  <!-- CAPÇALERA AMB MENÚ DE NAVEGACIÓ -->
+  <header class="cabecera">
+    <div class="logo">EcoAcció</div> <!-- Nom o logotip textual de l'organització -->
+    <nav>
+      <ul>
+        <!-- Enllaços del menú de navegació -->
+        <li><a href="index_CAT.html">Inici</a></li>
+        <li><a href="proyectos_CAT.html">Projectes</a></li>
+        <li><a href="Noticias_CAT.html">Notícies</a></li>
+        <li><a href="tiendaCAT.html">Botiga</a></li>
+        <li class="dropdown"> <!-- Botó desplegable per a la selecció d'idioma -->
+          <a href="#" id="languageButton">CAT ▾</a>
+          <ul class="submenu">
+            <li><a href="../EN/tienda.html">EN</a></li>
+            <li><a href="../ES/tienda.html">ES</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECCIÓ PRINCIPAL DE PROJECTES -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Imatge del producte -->
+        <img src="../img/linterna.jpg" alt="Llanterna Solar" class="img-fluid margen5" width="50%">
+      </div>
+
+      <div class="col-md-6">
+        <!-- Descripció del producte -->
+        <h3 class="margen21">LED solar recarregable de 1000 lúmens, feix alt/baix, panell solar integrat que carrega interior o exterior, cable USB inclòs per a càrrega ràpida</h3>
+        <h4 class="grande">-8 % 9,99€</h4>
+
+        <!-- Formulari per afegir al carret -->
+        <div class="container mt-5">
+          <div class="row justify-content-end">
+            <div class="col-md-4">
+              <form class="cart bg-dark text-light p-4 rounded shadow align-items-center" action="" method="post" enctype="multipart/form-data">
+                <h4 class="mb-3 text-center">Afegir al carret</h4>
+                <div class="quantity d-flex align-items-center justify-content-center mb-3">
+                  <!-- Botons per ajustar quantitat -->
+                  <button type="button" class="btn btn-outline-light btn-sm me-2 minus">-</button>
+                  <input type="number" id="quantity_eldenring" class="form-control text-center w-50" value="1" min="1" name="quantity" step="1" inputmode="numeric" autocomplete="off">
+                  <button type="button" class="btn btn-outline-light btn-sm ms-2 plus">+</button>
+                </div>
+                <button type="submit" name="add-to-cart" value="eldenring" class="btn btn-warning w-100">Afegir al carret</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avís sobre l'IVA -->
+        <h4 class="grande1">Els preus dels productes venuts a ECOACCIO.COM inclouen l’IVA. Depenent de la teva adreça d’enviament, l’IVA pot variar en finalitzar la compra. Per a més informació, fes clic</h4>
+      </div>
+    </div>
+
+    <!-- Segon producte -->
+    <div class="row mt-2">
+      <h2 class="margen17">CARREGADOR SOLAR</h2>
+    </div>
+
+    <div class="row mt-1">
+      <div class="col-md-6">
+        <img src="../img/panel.png" alt="Carregador Solar" class="img-fluid" width="90%">
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="margen21">Panell Solar, Carregador Solar Portàtil a l'Aire Lliure del Panell de Degoteig per a Paquets d’Energia Mòbil de Telèfons, Càmeres 2W 5V</h2>
+        <h4 class="grande">- 10,29€</h4>
+
+        <!-- Formulari per afegir al carret -->
+        <div class="container mt-5">
+          <div class="row justify-content-end">
+            <div class="col-md-4">
+              <form class="cart bg-dark text-light p-4 rounded shadow align-items-center" action="" method="post" enctype="multipart/form-data">
+                <h4 class="mb-3 text-center">Afegir al carret</h4>
+                <div class="quantity d-flex align-items-center justify-content-center mb-3">
+                  <button type="button" class="btn btn-outline-light btn-sm me-2 minus">-</button>
+                  <input type="number" id="quantity_eldenring" class="form-control text-center w-50" value="1" min="1" name="quantity" step="1" inputmode="numeric" autocomplete="off">
+                  <button type="button" class="btn btn-outline-light btn-sm ms-2 plus">+</button>
+                </div>
+                <button type="submit" name="add-to-cart" value="eldenring" class="btn btn-warning w-100">Afegir al carret</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="grande1">Els preus dels productes venuts a ECOACCIO inclouen l’IVA. Depenent de la teva adreça d’enviament, l’IVA pot variar en finalitzar la compra. Per a més informació, fes clic</h4>
+      </div>
+    </div>
+
+    <!-- Secció de ressenyes -->
+    <div class="row mt-2">
+      <h2 class="margen17">RESSENYES</h2>
+    </div>
+
+    <div class="container">
+      <h2 class="text-center text-light mb-4">RESSENYES</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="reseñas bg-secondary text-white p-4 rounded shadow text-center">
+
+            <!-- Exemples de ressenyes -->
+            <div class="mb-4 reseña">
+              <h5 class="fw-bold text-warning">⭐️⭐️⭐️⭐️⭐️ - Diego M.</h5>
+              <p class="textocentrado">Llanterna increïble! Molt bona il·luminació, càrrega ràpida.</p>
+            </div>
+            <div class="mb-4 reseña">
+              <h5 class="fw-bold text-warning">⭐️⭐️⭐️⭐️ - Michael Hidalgo.</h5>
+              <p class="textocentrado">Em va servir molt el panell solar, gràcies a això vaig poder salvar la meva família de l’apagada.</p>
+            </div>
+            <div class="mb-4 reseña">
+              <h5 class="fw-bold text-warning">⭐️⭐️⭐️ - Marcos Felix.</h5>
+              <p class="textocentrado">Molt xulo, gràcies.</p>
+
+              <hr class="text-light">
+
+              <!-- Formulari per deixar una nova ressenya -->
+              <h4 class="mb-3 text-warning">Deixa la teva ressenya</h4>
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label text-light">Nom:</label>
+                  <input type="text" class="form-control text-center" id="nombre" required 
+                </div>
+                
+                
+  <footer class="pie">
+    <div class="pie-contenido">
+      <div class="pie-logo">
+        <img src="../img/logoecoaccion.png" alt="EcoAcció"> <!-- Logo al peu de pàgina -->
+      </div>
+      <div class="pie-info">
+        <p><strong>Contacte</strong></p>
+        <p>Telèfon: 658 90 01 26</p>
+        <p>Email: Ecoaccio.ong@hotmail.com</p>
+        <p>Barcelona (L'Hospitalet de Llobregat) 08904</p>
+      </div>
+    </div>
+
+    <!-- Enllaços a xarxes socials -->
+    <a class="small" href="https://www.instagram.com/_eco_accion/"><i class="fab fa-instagram"></i> Instagram</a>
+    <a class="small" href="https://www.facebook.com/EcoAccioon/about/"><i class="fab fa-facebook-f"></i> Facebook</a>
+
+    <!-- Informació legal i lema -->
+    <p class="small">© 2025 ECOACCIO.ONG. Tots els drets reservats.</p>
+    <p class="small">Per un futur més sostenible</p>
+  </footer>
+
+</body>
+</html>
+
+  

@@ -1,46 +1,4 @@
 
-/*🌐 Estilos globales*/
-
-  * {
-  box-sizing: border-box; /* Incluye padding y borde dentro del ancho y alto total del elemento */
-  margin: 0;              /* Elimina márgenes por defecto */
-  padding: 0;             /* Elimina relleno por defecto */
-}
-
-body {
-  font-family: "Segoe UI", sans-serif; /* Fuente principal del sitio */
-  background-color: #f9f9f9;           /* Color de fondo claro */
-  color: #333;                         /* Color de texto gris oscuro */
-  line-height: 1.6;                    /* Altura de línea para mejorar legibilidad */
-}
-
-/*-------------------------------------------------------------------------------------------------------------*/
-
-
-/* 🖼️ Sección Hero (imagen destacada) */
-
-.hero {
-  background-image: url('../img/fotos1.jpg');   /* Imagen de fondo */
-  background-size: cover;                        /* La imagen cubre todo el espacio */
-  background-position: center;                   /* Centra la imagen */
-  padding: 100px 20px;                           /* Espaciado interno */
-  color: white;                                  /* Color del texto */
-  text-align: center;                              /* Centra el texto */
-}
-
-/*------------------------------------------------------------------------------------------------*/
-
-  /* 🔝 Cabecera / Header */
-
-  .cabecera {
-  background-color: #0260a9; /* Azul oscuro como fondo */
-  color: white;              /* Texto en blanco */
-  padding: 1rem 2rem;        /* Espaciado interior */
-  display: flex;             /* Flexbox para alinear elementos */
-  justify-content: space-between; /* Distribuye elementos */
-  align-items: center;            /* Centra verticalmente */
-}
-  
 .logo {
   font-weight: bold;      /* Texto en negrita */
   font-size: 1.5rem;      /* Tamaño grande para el logo */
@@ -151,8 +109,6 @@ nav a {
 
 /*-----------------------------------------------------------------------------------------------*/
 /*📂 Menú desplegable (submenús)*/
-
-
 
 
 .submenu {
