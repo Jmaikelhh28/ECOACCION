@@ -1,4 +1,45 @@
+/*🌐 Estilos globales*/
 
+  * {
+  box-sizing: border-box; /* Incluye padding y borde dentro del ancho y alto total del elemento */
+  margin: 0;              /* Elimina márgenes por defecto */
+  padding: 0;             /* Elimina relleno por defecto */
+}
+
+body {
+  font-family: "Segoe UI", sans-serif; /* Fuente principal del sitio */
+  background-color: #f9f9f9;           /* Color de fondo claro */
+  color: #333;                         /* Color de texto gris oscuro */
+  line-height: 1.6;                    /* Altura de línea para mejorar legibilidad */
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+/* 🖼️ Sección Hero (imagen destacada) */
+
+.hero {
+  background-image: url('../img/fotos1.jpg');   /* Imagen de fondo */
+  background-size: cover;                        /* La imagen cubre todo el espacio */
+  background-position: center;                   /* Centra la imagen */
+  padding: 100px 20px;                           /* Espaciado interno */
+  color: white;                                  /* Color del texto */
+  text-align: center;                              /* Centra el texto */
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+  /* 🔝 Cabecera / Header */
+
+  .cabecera {
+  background-color: #0260a9; /* Azul oscuro como fondo */
+  color: white;              /* Texto en blanco */
+  padding: 1rem 2rem;        /* Espaciado interior */
+  display: flex;             /* Flexbox para alinear elementos */
+  justify-content: space-between; /* Distribuye elementos */
+  align-items: center;            /* Centra verticalmente */
+}
+ 
 .logo {
   font-weight: bold;      /* Texto en negrita */
   font-size: 1.5rem;      /* Tamaño grande para el logo */
@@ -18,14 +59,14 @@ nav a {
 }
 
 /*-----------------------------------------------------------------------*/
-  
-  
+ 
+ 
   .hero-texto {
     background-color: rgba(0,0,0,0.5);
     padding: 2rem;
     border-radius: 10px;
   }
-  
+ 
 /*---------------------------------------------------------------------------*/
 
 /* 🔘 Botón reutilizable */
@@ -41,7 +82,7 @@ nav a {
 }
 
   /*------------------------------------------------------------------------------*/
-  
+ 
 
   /*🧱 Sección de bloques*/
   .contenedor {
@@ -109,6 +150,8 @@ nav a {
 
 /*-----------------------------------------------------------------------------------------------*/
 /*📂 Menú desplegable (submenús)*/
+
+
 
 
 .submenu {
@@ -210,13 +253,38 @@ nav a {
   text-align: center;        /* Centra horizontalmente el texto */
   margin-top: 10px;          /* Espacio superior para separarlo del contenido anterior */
 }
+.margen21{
+  margin-top: 21px;
+}
+.grande{
+  font-size: 25px;
+  color: brown;
+}
+.grande1{
+  font-size: 25px;
+  margin-top: 15px;
+}
+.margen17{
+  background-color: #0260a9;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-top: 20px;
+}
+.margen5{
+  margin-top: 7px;
+}
 
+.margen24{
+  background-color: blue;
+  margin-top: 10px;
+}
 /*-------------------------------------------------------------------------------------------------*/
 
 /* Responsive para móviles */
 /* Responsive para móviles */
 @media (max-width: 768px) {
-  
+ 
   /* General Styles for Mobile */
   body {
     font-size: 14px; /* Ajustar el tamaño de la fuente para pantallas más pequeñas */
@@ -361,5 +429,11 @@ nav a {
 
   .small {
     font-size: 0.7rem; /* Tamaño de texto más pequeño para pie de página */
+  }
+  .margen5{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;    
   }
 }
